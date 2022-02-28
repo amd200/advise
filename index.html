@@ -19,11 +19,17 @@
         and taking action."
       </p>
       <div class="flex">
-        <img src="images/pattern-divider-desktop.svg" alt="">
+        <img id="img" src="images/pattern-divider-desktop.svg" alt="" />
       </div>
       <div class="green">
-       <img src="images/icon-dice.svg" alt="">
+        <img src="images/icon-dice.svg" alt="" />
       </div>
     </div>
+    <script>
+      if (screen.width < 765) {
+        document.getElementById("img").src =
+          "images/pattern-divider-mobile.svg";
+      }
+    </script>
   </body>
 </html>
